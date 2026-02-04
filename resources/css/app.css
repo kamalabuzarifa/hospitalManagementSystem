@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark mode main background */
+html.dark body,
+html.dark main,
+html.dark #doctor-layout,
+html.dark .container {
+	background-color: #0b1224 !important;
+}
+
+/* Sidebar and nav in dark mode */
+html.dark aside,
+html.dark nav {
+	background-color: #000 !important;
+	border: none;
+	border-right: 0.5px solid rgba(255,255,255,0.41) !important;
+}
+html.dark aside div.logo-brand,
+html.dark aside div.avatar-doctor {
+	border-bottom: 0.5px solid rgba(255,255,255,0.41) !important;
+}
+html.dark aside div.logout{
+	border-top: 0.5px solid rgba(255,255,255,0.41) !important;
+}
+
+/* Mobile sidebar buttons */
+html.dark .sidebar-all-btn-open,
+html.dark .sidebar-all-btn-closed {
+	border: none !important;
+}
+html.dark .sidebar-all-btn-open {
+	background-color: #ffffffdf !important;
+}
+
+html.dark .sidebar-all-btn-closed {
+	background-color: #fff !important;
+}
+
+html.dark .sidebar-all-btn-open svg,
+html.dark .sidebar-all-btn-closed svg{
+	color: #0b1224bf !important;
+}
+
+/* Nav link colors and interactions */
+html.dark nav a{
+	color: #ffffff;
+	transition: background-color .15s ease, color .15s ease;
+}
+html.dark nav {
+	border-top: 0.5px solid rgba(255,255,255,0.41) !important;
+	border-bottom: 0.5px solid rgba(255,255,255,0.41) !important;
+}
+html.dark nav a.active,
+html.dark nav a:hover,
+html.dark nav a:focus {
+	background-color: #ffffff !important;
+	color: #0b1224 !important;
+}
+
+html:not(.dark) nav a.active {
+	color: #374151;
+	background-color: #f3f4f6;
+	font-weight: bold;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+html.dark .text-admain,
+html.dark .text-title {
+	color: #ffffff !important;
+}
+
+html.dark .text-titlesticky {
+	color: #ffffffd0 !important;
+}
+html.dark .text-titlest {
+	color: #696969 !important;
+}
+html.dark .text-black{
+	color: #000;
+}
+
+html.dark .button-light{
+	background-color: #f6f8fa !important;
+	color: #0c0d19 !important;
+}
+
+/* Fix for access logs / panels in dark mode */
+html.dark .div-all-accessLogs,
+html.dark .div-all-accessLogs nav div{
+	background-color: transparent !important;
+	color: inherit !important;
+	border: none;
+}
+
+.dark\:text-gray-600:is(.dark *) {
+	--tw-text-opacity: 1;
+	color: rgb(255 255 255) !important;
+}
+
+html.dark .option_patients,
+html.dark .option_medicines,
+html.dark .select-patients,
+html.dark .select-medicines {
+	color: #000000 !important;
+}
+
+
