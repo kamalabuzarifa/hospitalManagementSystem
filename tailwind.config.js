@@ -23,8 +23,12 @@ export default {
 
     theme: {
         extend: {
+            colors: {
+                primary: '#2b66f1',
+            },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                display: ['Inter', ...defaultTheme.fontFamily.sans],
             },
         },
     },

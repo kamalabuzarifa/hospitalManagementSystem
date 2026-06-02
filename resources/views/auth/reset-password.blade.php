@@ -17,30 +17,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ __('messages.title') }} - {{ __('messages.thera') }}</title>
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#2b66f1',
-                        'background-light': '#f0f4f8',
-                        'background-dark': '#0f172a',
-                    },
-                    fontFamily: {
-                        display: ['Inter', 'sans-serif'],
-                    },
-                    borderRadius: {
-                        DEFAULT: '0.75rem',
-                    },
-                },
-            },
-        };
-    </script>
-    <style type="text/tailwindcss">
+    <style>
         .medical-bg {
             background:
                 linear-gradient(rgba(235, 244, 255, 0.86), rgba(235, 244, 255, 0.86)),
